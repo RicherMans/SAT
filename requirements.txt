@@ -1,0 +1,17 @@
+audioread
+bitsandbytes
+einops
+fire
+h5py
+ignite
+loguru
+numpy
+pandas
+pytorch_ignite
+PyYAML
+scikit_learn
+soundfile
+torch>=1.8.2
+torch_audiomentations==0.11.0
+torchaudio
+tqdm

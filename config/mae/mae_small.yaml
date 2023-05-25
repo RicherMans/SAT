@@ -1,0 +1,10 @@
+outputpath: experiments/mae/
+train_data: datasets/audioset/data/labels/balanced.csv
+cv_data: datasets/audioset/data/labels/eval.csv
+batch_size: 32
+model: mae_audio_transformer_small
+model_args:
+  target_length: 1000
+epoch_length: null
+warmup_epochs: 3
+chunk_length: 10.0

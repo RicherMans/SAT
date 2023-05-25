@@ -1,0 +1,14 @@
+outputpath: experiments/audioset
+train_data: datasets/audioset/data/labels/balanced.csv
+cv_data: datasets/audioset/data/labels/eval.csv
+psl_data: datasets/audioset/data/psl_labels/balanced_vit_base_chunked4s_topk10_47_40.parquet
+batch_size: 32
+model: SAT_T_2s
+model_args: {}
+epoch_length: null
+sampler: balanced
+epochs: 250
+warmup_epochs: 10
+optimizer_args:
+  lr: 0.0005
+chunk_length: 4.0
