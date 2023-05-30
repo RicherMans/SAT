@@ -1,5 +1,7 @@
 # Streaming Audio Transformers for Online Audio Tagging
 
+Source for the [Paper](https://arxiv.org/abs/2305.17834).
+
 Highlights:
 
 * Transformers capable of being used for online-audio tagging. The model processes at most **2s at a time** and incorporated past predictions. Best used when **deployed on stationary devices** (cameras, speakers, electronic household items). 
