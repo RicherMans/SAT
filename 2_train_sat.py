@@ -136,8 +136,8 @@ class RunnerSAT(object):
             **train_dataloader_kwargs,
         )
         test_dataloader = torch.utils.data.DataLoader(
-            dataset.UnlabeledHDF5Dataset(
-                cv_df, chunk_length=config_parameters.chunk_length),
+            dataset.WeakHDF5Dataset(
+                cv_df),
             batch_size=config_parameters.eval_batch_size,
             num_workers=config_parameters.num_workers,
             shuffle=False,
