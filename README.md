@@ -1,13 +1,13 @@
 # Streaming Audio Transformers for Online Audio Tagging
 
-Source for the [Paper](https://arxiv.org/abs/2305.17834).
+Source for the paper [Streaming Audio Transformers for Online Audio Tagging](https://arxiv.org/abs/2305.17834).
 
 Highlights:
 
 * Transformers capable of being used for online-audio tagging. The model processes at most **2s at a time** and incorporated past predictions. Best used when **deployed on stationary devices** (cameras, speakers, electronic household items). 
 * Different from most research, SAT is aimed to **deploy an audio tagger**, not use it as a feature extractor to some other task.
 * Performance: 45.1 mAP on the best model with 2s delay, and 43.3 mAP on a ViT-Tiny.
-* Memory and computational footprint is manageable. Our SAT-T can be **easily deployed on mobile devices**, with 20 Mb (size) parameters and 9 Mb (float32) RAM. For 1s inference, we only require 4.3 Mb of RAM.
+* Memory and computational footprint are manageable. Our SAT-T can be **easily deployed on mobile devices**, with 20 Mb (size) parameters and 9 Mb (float32) RAM. For 1s inference, we only require 4.3 Mb of RAM.
 * Partially solves most AT problems that deploy transformers such as: "my transformer's performance is very bad on shorter than 10s sized clips" and "pad the input to 10s and pay the computational overhead price". SAT helps problems like [1](https://github.com/qiuqiangkong/audioset_tagging_cnn/issues/50), [2](https://github.com/fschmid56/EfficientAT/issues/3), [3](https://github.com/YuanGongND/ast/issues/92), [4](https://github.com/YuanGongND/ast/issues/87) and [5](https://github.com/YuanGongND/ast/issues/60).
 * SAT can track **long-term events** effectively, whereas standard audio taggers generally have a high score-variance between successive chunks.
 
